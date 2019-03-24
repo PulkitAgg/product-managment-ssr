@@ -1,7 +1,7 @@
 # product-managment-ssr
 This is simple sample for SSR in react js using node.js. I have used Mobx for state managment.
 
-#Steps to run this project.
+## Steps to run this project.
 Before running this project, you have to setup node.js and mongodb on your system.
 
 Step 1: Clone this project using this command
