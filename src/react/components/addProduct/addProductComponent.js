@@ -24,6 +24,7 @@ class AddProductComponent extends Component {
     }
 
     componentDidMount() {
+        // If we are comming for edit the product.
         if (this.props.location.state && this.props.location.state.productId) {
             let form = this.state.form;
             form.name.value = this.props.location.state.name;
@@ -35,6 +36,10 @@ class AddProductComponent extends Component {
             })
         }
     }
+
+    /**
+     * function for add/ updating the product.
+     */
     addProduct() {
         if (this.checkValidations()) {
             utility.showLoader();
@@ -139,6 +144,9 @@ class AddProductComponent extends Component {
         }
     }
 
+    /**
+     * function for checking the validation of the product form.
+     */
     checkValidations() {
         let form = this.state.form;
         let formIsValid = true;
